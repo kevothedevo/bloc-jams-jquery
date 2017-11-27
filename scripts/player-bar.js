@@ -27,6 +27,14 @@
     $('#time-control .current-time').text( currentTime );
     $('#time-control input').val(percent);
   }, 1000);
+
+  //FOR THE ASSIGNMENTR SECTION
+  //Volume control
+  $('#volume-control input').on('input', funtion (event) {
+    player.setVolume(event.target.value);
+  });
+
+  //FOR THE ASSIGNMENTR SECTION
 }
 
 {
